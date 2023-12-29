@@ -51,8 +51,7 @@ contract Erc721Example is ERC721, ERC721URIStorage, Ownable {
     function setRanking(uint256 tokenId, uint256 newRanking) public{
         require(ownerOf(tokenId) == msg.sender, "You don't own this NFT");
         playerIdentities[tokenId].ranking = newRanking;
-    }
-
+    }   
 
     /**
      * Overrides the transfer function to prevent NTTs from being transferred.
