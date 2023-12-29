@@ -53,6 +53,7 @@ contract Erc721Example is ERC721, ERC721URIStorage, Ownable {
         playerIdentities[tokenId].ranking = newRanking;
     }
 
+
     /**
      * Overrides the transfer function to prevent NTTs from being transferred.
      */
